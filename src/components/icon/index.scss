@@ -1,0 +1,14 @@
+.icon {
+  display: inline-block;
+  line-height: 0;
+
+  & > * {
+    line-height: 1;
+  }
+
+  svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+  }
+}

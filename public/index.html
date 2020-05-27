@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录系统</title>
+  <style>#loading {position:fixed;z-index:9999;top:0;left:0;display:flex;align-items:center;justify-content:center;width:100vw;height:100vh;}#loading .container {position:relative;width:30px;height:30px;}#loading .container {-webkit-transform:rotate(10deg);transform:rotate(10deg);-webkit-animation:rotation 1s infinite;animation:rotation 1s infinite;}#loading .container .shape {position:absolute;border-radius:5px;width:10px;height:10px;}#loading .container .shape.shape1 {left:0;background-color:#5C6BC0;-webkit-animation:shape1 0.5s ease 0s infinite alternate;animation:shape1 0.5s ease 0s infinite alternate;}@-webkit-keyframes shape1 {from {-webkit-transform:translate(0, 0);transform:translate(0, 0);}to {-webkit-transform:translate(20px, 20px);transform:translate(20px, 20px);}}@keyframes shape1 {from {-webkit-transform:translate(0, 0);transform:translate(0, 0);}to {-webkit-transform:translate(20px, 20px);transform:translate(20px, 20px);}}#loading .container .shape.shape2 {right:0;background-color:#8BC34A;-webkit-animation:shape2 0.5s ease 0s infinite alternate;animation:shape2 0.5s ease 0s infinite alternate;}@-webkit-keyframes shape2 {from {-webkit-transform:translate(0, 0);transform:translate(0, 0);}to {-webkit-transform:translate(-20px, 20px);transform:translate(-20px, 20px);}}@keyframes shape2 {from {-webkit-transform:translate(0, 0);transform:translate(0, 0);}to {-webkit-transform:translate(-20px, 20px);transform:translate(-20px, 20px);}}#loading .container .shape.shape3 {bottom:0;background-color:#FFB74D;-webkit-animation:shape3 0.5s ease 0s infinite alternate;animation:shape3 0.5s ease 0s infinite alternate;}@-webkit-keyframes shape3 {from {-webkit-transform:translate(0, 0);transform:translate(0, 0);}to {-webkit-transform:translate(20px, -20px);transform:translate(20px, -20px);}}@keyframes shape3 {from {-webkit-transform:translate(0, 0);transform:translate(0, 0);}to {-webkit-transform:translate(20px, -20px);transform:translate(20px, -20px);}}#loading .container .shape.shape4 {bottom:0;right:0;background-color:#F44336;-webkit-animation:shape4 0.5s ease 0s infinite alternate;animation:shape4 0.5s ease 0s infinite alternate;}@-webkit-keyframes shape4 {from {-webkit-transform:translate(0, 0);transform:translate(0, 0);}to {-webkit-transform:translate(-20px, -20px);transform:translate(-20px, -20px);}}@keyframes shape4 {from {-webkit-transform:translate(0, 0);transform:translate(0, 0);}to {-webkit-transform:translate(-20px, -20px);transform:translate(-20px, -20px);}}@-webkit-keyframes rotation {from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}to {-webkit-transform:rotate(360deg);transform:rotate(360deg);}}@keyframes rotation {from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}to {-webkit-transform:rotate(360deg);transform:rotate(360deg);}}</style>
+  <script>window.onload=function(){document.getElementById('loading').remove()}</script>
+  <link rel="preload" href="https://cdn.bootcss.com/crypto-js/4.0.0/crypto-js.min.js" as="script">
+  <link rel="preload" href="https://cdn.bootcss.com/jsencrypt/3.0.0-rc.1/jsencrypt.min.js" as="script">
+  <link rel="preload" href="https://cdn.bootcss.com/axios/0.19.2/axios.min.js" as="script">
+</head>
+<body>
+  <noscript>
+    <strong>很抱歉，如果不启用JavaScript，网站无法正常工作。请启用JavaScript。</strong>
+  </noscript>
+  <div id="loading">
+    <div class="container">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+    </div>
+  </div>
+  <div id="app"></div>
+  <script src="https://cdn.bootcss.com/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <script src="https://cdn.bootcss.com/jsencrypt/3.0.0-rc.1/jsencrypt.min.js"></script>
+  <script src="https://cdn.bootcss.com/axios/0.19.2/axios.min.js"></script>
+</body>
+</html>
+
